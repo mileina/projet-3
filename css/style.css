@@ -1,0 +1,389 @@
+@media screen and (max-width: 768px) {
+
+    img,
+    table,
+    td,
+    blockquote,
+    code,
+    pre,
+    textarea,
+    input,
+    iframe,
+    object,
+    embed,
+    video {
+        max-width: 100%;
+    }
+    
+    body{
+        max-width: 100%;
+        background-color: red;
+    }
+    
+    }
+
+    /* j'ai pas reussi a corriger le bug pour le format 768px*/
+
+
+@font-face {
+	font-family: 'courgette';
+	src: url(../police/Courgette-Regular.ttf),
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'courgette', sans-serif;
+    background-color: rgb(242, 242, 242)
+    
+}
+header{
+    background-color:rgb(246, 212, 245);
+}
+.topbar{
+    background-color: black;
+    color:rgb(246, 212, 245);
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5em;
+    color: white;
+}
+div.container a img{
+    margin-left: 50px;
+}
+div.container{
+    display: flex;
+    padding: 15px;
+    padding-right: 50px;
+    justify-content: space-between;
+    background-color:rgb(246, 212, 245);
+    flex-direction: row;
+}
+p.left{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding: 15px;
+}
+p.left>span{
+    font-weight: bold;
+    text-align: right;
+}
+div>i {
+    margin: 10px;
+    font-size: 50px;
+    color:palevioletred;
+}
+nav{
+    display: flex; 
+    flex-direction : row; 
+    justify-content: space-evenly;
+    margin-top: 40px;
+    padding-bottom:50px ;
+}
+nav>a{
+    text-decoration: none;
+    color: black;
+    text-transform : uppercase;
+    padding: 15px;
+}
+nav a:hover{
+    background-color: rgb(53, 50, 50);
+    color: white;
+    transition: .1s ease 0s;
+}
+
+
+#slider{
+    background-color: white;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+}
+main.container h2{
+    position: absolute;
+    color: black;
+    background-color:rgb(246, 212, 245) ;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    opacity: 0.8;
+
+}
+#slider img{
+    border: 20px solid white;
+    width: 100% ;
+    box-shadow: 0 0 5px black;
+
+
+}
+
+
+.right{
+    float: right;
+}
+
+.clear::after{
+    content: '';
+    display: block;
+    clear: none;
+}
+
+
+main.container{
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*section#select{
+    background-color: white;
+    display: grid;
+    max-width: 1300px ;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    grid-template-columns: repeat(auto-fill,220px);
+    justify-content: center;
+}*/
+
+
+/*main.container h1{
+    grid-column-start: 1;
+    grid-column-end: 6 ;
+    text-align: center;
+}*/
+
+section#select{
+    max-width: 100%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 5PX black;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    margin-right: 150px ;
+    justify-content: space-around;
+}
+
+main.container h1{
+    margin-left: 15px;
+    flex: 100%;
+}
+
+section#select img{
+    width: 150px;
+    height: 150px;
+}
+
+main#select article{
+    text-align: center;
+    font-family: "courgette";
+    font-size: 1.6em;
+}
+
+/*
+section#news{
+    display: grid;
+    max-width: 1300px ;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 40px;    
+    grid-column-gap:20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}*/
+
+#select:hover article{
+    opacity: 0.5;
+}
+#select article:hover{
+    transition: .2 ease 0s;
+    opacity: 1;
+}
+
+main #news article {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px black;
+    flex: 1 1 auto; 
+    background-color: white;
+    margin: 10px;
+
+}
+
+section#news{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+
+article#new{
+    background-color: white;
+    margin-left: 0 !important;
+}
+
+article#best{
+    background-color: white;
+}
+
+article#crush{
+    margin-right: 0!important;
+}
+section#news img{
+    justify-content:center;
+    width: 400px;
+    height: 400px;
+    margin: AUTO;
+
+}
+
+#new h2{
+    
+    font-weight : normal;
+    color: white;
+    position: static;
+    max-width: 100%;
+    background-color: rgb(233, 53, 195);
+    opacity: 100%;
+}
+
+#crush h2{
+    
+    font-weight : normal;
+    color: white;
+    position: static;
+    max-width: 100%;
+    background-color: rgb(0, 152, 179);
+    opacity: 100%;
+}
+
+#best h2{
+    
+    font-weight : normal;
+    color: white;
+    position: static;
+    max-width: 100%;
+    background-color: rgb(145, 189, 70);
+    opacity: 100%;
+}
+
+section#news h3,section#news small{
+    font-family: 'courgette';
+    text-align: center;
+    margin: 15px;
+}
+
+/*
+article#new {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+
+article#crush{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+article#new h2{
+    padding: 10px;
+    font-weight : normal;
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: static;
+    background-color: rgb(233, 53, 195);
+    opacity: 100%;
+}
+article#best h2{
+    padding: 10px;
+    font-weight : normal;
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: static;
+    background-color: rgb(145, 189, 70);
+    opacity: 100%;
+}
+article#crush h2{
+    padding: 10px;
+    font-weight : normal;
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: static;
+    background-color: rgb(0, 152, 179);
+    opacity: 100%;
+}
+section#news img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main.container h3{
+    text-align: center;
+}
+main.container small{
+    text-align: center;
+}*/
+section#info{
+    background-color: rgb(227,173,225);
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+section#info article{
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+}
+section#bottombar{
+    background-color: rgb(245, 212, 246);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+section#bottombar ul li{
+    list-style-type: none;
+    line-height: 40px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+footer #info article i{
+    display: block;
+    text-align: center;
+}
+footer #info article:hover{
+    color: white;
+    cursor: pointer;
+    transition: .2s ease 0;
+}
+ul>li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#bottombar h2{
+    padding-left: 40px;
+}
+
+section#bottombar h2{
+    text-align: center;
+}
+
